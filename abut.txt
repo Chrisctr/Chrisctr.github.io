@@ -1,0 +1,17 @@
+About
+Mesa’s App Lab is the world’s first digital services hub, 
+designed by Scarlet International (a subsidiary of the 
+Senex Consortium) for use on the MesaBlock V1 
+communication/personal computing device. 
+The hub is a collaboration of multiple different 
+businesses within the Senex Consortium, who have agreed 
+to provide their services to those with the app from 
+anywhere in the world. No matter where you are, as long 
+as you have signal, you can enlist these businesses to 
+help you, whether this be for groceries, travelling or 
+even stock broking. In addition, Mesa’s App Lab is 
+compatible with the Mesa Medi-Viser, allowing you to 
+monitor your health through the device. The service is 
+currently in its late alpha stages, so any feedback is 
+much appreciated. To submit your feedback, use the panel 
+embedded below. 

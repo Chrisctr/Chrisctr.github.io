@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Script Tutorials" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>HTML5 Audio player with playlist | Script Tutorials</title>
+  <link rel="stylesheet" href="themes/anatoli.css" />
+
+    <!-- add styles and scripts -->
+    <link href="css/musicstyles.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+    <script type="text/javascript" src="js/musicmain.js"></script>
+	<script src="mesa-pixel.font.js"></script>
+	
+</head>
+<body style="font-family:'Mesa Pixel'" >
+ <div data-role="page" id="whav" data-theme="d"> 
+<div style="font-family: 'Mesa Pixel';">
+<div data-role="header">
+
+</div>
+    <div class="example">
+
+        <div class="player">
+            <div class="pl"></div>
+            <div class="title" style="font-family: 'Mesa Pixel';"></div>
+            <div class="artist" style="font-family: 'Mesa Pixel';"></div>
+            <div class="cover"></div>
+            <div class="controls">
+                <div class="play"></div>
+                <div class="pause"></div>
+                <div class="rew"></div>
+                <div class="fwd"></div>
+            </div>
+            <div class="volume"></div>
+            <div class="tracker"></div>
+        </div>
+        <ul class="playlist hidden">
+            <li audiourl="popthing.mp3" cover="cover1.jpg" artist="Sapphire">Pop Thing</li>
+            <li audiourl="sillylizard.mp3" cover="cover1.jpg" artist="">Silly Lizard</li>
+            <li audiourl="uglypenguin.mp3" cover="cover1.jpg" artist="">Ugly Penguin</li>
+            <li audiourl="thinkingmananthem.mp3" cover="cover1.jpg" artist="">Thinking Man's Anthem</li>
+            <li audiourl="lazylynx.mp3" cover="cover1.jpg" artist="Sapphire">Lazy Lynx</li>
+            <li audiourl="random.mp3" cover="cover1.jpg" artist="Sapphire">Random</li>
+            <li audiourl="melodyupbeat.mp3" cover="cover1.jpg" artist="">Melody Upbeat</li>
+            <li audiourl="vulgarhamster.mp3" cover="cover1.jpg" artist="">Vulgar Hamster</li>
+			<li audiourl="nurtureme.mp3" cover="cover1.jpg" artist="Sapphire">Nurture Me</li>
+        </ul>
+
+    </div></div></div>
+	  <audio controls autoplay>
+  <source src="music/sapphire.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>	
+</body>
+</html>

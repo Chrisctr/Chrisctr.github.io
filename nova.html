@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>EditableGrid - Minimal demo - Creating grid in Javascript</title>
+		
+		<script src="editablegrid.js"></script>
+		<!-- [DO NOT DEPLOY] --> <script src="editablegrid_renderers.js" ></script>
+		<!-- [DO NOT DEPLOY] --> <script src="editablegrid_editors.js" ></script>
+		<!-- [DO NOT DEPLOY] --> <script src="editablegrid_validators.js" ></script>
+		<!-- [DO NOT DEPLOY] --> <script src="editablegrid_utils.js" ></script>
+		<!-- [DO NOT DEPLOY] --> <script src="editablegrid_charts.js" ></script>
+		<link rel="stylesheet" href="editablegrid.css" type="text/css" media="screen">
+		
+		<style>
+			body { font-family:'Mesa Pixel', tahoma, verdana, arial, sans-serif; font-size:11px; }
+			h1 { font-size: 15px; }
+			a { color: #548dc4; text-decoration: none; }
+			a:hover { text-decoration: underline; }
+			table.testgrid { border-collapse: collapse; border: 5px solid #CCB; width: 800px; }
+			table.testgrid td, table.testgrid th { padding: 5px; border: 5px solid #E0E0E0; }
+			table.testgrid th { background: #E5E5E5; text-align: left; }
+			input.invalid { background: red; color: #FDFDFD; }
+		</style>
+		
+		<script>
+			window.onload = function() {
+
+				// this approach is interesting if you need to dynamically create data in Javascript 
+				var metadata = [];
+				metadata.push({ name: "name", label: "NAME", datatype: "string", editable: true});
+				metadata.push({ name: "talidor", label:"Nova", datatype: "string", editable: true});
+
+				// a small example of how you can manipulate the object in javascript
+
+
+				var data = [];
+				data.push({id: 1, values: {"name":"Level","talidor":"1"}})
+				data.push({id: 2, values: {"name":"Experience","talidor":"0"}})
+			
+				data.push({id: 3, values: {"name":"Class","talidor":"Ninja"}})
+				data.push({id: 4, values: {"name":"Subclass","talidor":"Shinobi, Sensei"}})
+			
+				data.push({id: 5, values: {"name":"Size","talidor":"Medium"}})
+				data.push({id: 6, values: {"name":"Type","talidor":"Fox Bellua"}})
+			
+				data.push({id: 7, values: {"name":"Age","talidor":"21"}})
+				data.push({id: 8, values: {"name":"Affinity","talidor":"Dark"}})
+				
+				data.push({id: 23, values: {"name":"Magical Category","talidor":"Category Two (Fire and Ice. Void.)"}})
+			
+				data.push({id: 9, values: {"name":"Alignment","talidor":"Chaotic Neutral"}})
+				data.push({id: 10, values: {"name":"Saves","talidor":"Strength, Dexterity"}})
+			
+				data.push({id: 11, values: {"name":"Hit Points","talidor":"11"}})
+				data.push({id: 12, values: {"name":"Hit Dice","talidor":"1d12 + 3"}})
+			
+				data.push({id: 13, values: {"name":"Weight Capacity","talidor":"90lb"}})
+				data.push({id: 14, values: {"name":"Status Effects","talidor":"null."}})
+			
+				data.push({id: 15, values: {"name":"Currency (Mensi)","talidor":"100"}})
+				data.push({id: 16, values: {"name":"Speed","talidor":"20m"}})
+			
+				data.push({id: 17, values: {"name":"Strength","talidor":"22 (+6)"}})
+				data.push({id: 18, values: {"name":"Dexterity","talidor":"15 (+2)"}})
+			
+				data.push({id: 19, values: {"name":"Constitution","talidor":"12 (+1)"}})
+				data.push({id: 20, values: {"name":"Intelligence","talidor":"4 (-3)"}})
+			
+				data.push({id: 21, values: {"name":"Wisdom","talidor":"12 (+1)"}})
+				data.push({id: 22, values: {"name":"Charisma","talidor":"12 (+1)"}})
+			
+				data.push({id: 15, values: {"name":"Accuracy Level","talidor":"15"}})
+				data.push({id: 16, values: {"name":"Evasion Level","talidor":"6"}})
+			
+				data.push({id: 17, values: {"name":"Weapon Proficiencies","talidor":"Simple melee, Martial Melee"}})
+				data.push({id: 18, values: {"name":"Equipped","talidor":"Nova’s Katana (1d10 + 3 + 6 slash (+1 if two hands are used), can damage heavy armour)"}})
+			
+				data.push({id: 19, values: {"name":"Off-Hand","talidor":"null."}})
+				data.push({id: 20, values: {"name":"Holstered","talidor":"Nova’s Kunai (1d4 + 3 + 6 pierce (switch to 1d6 if thrown))"}})
+			
+				data.push({id: 21, values: {"name":"Armour Proficiencies","talidor":"Light or Less"}})
+				data.push({id: 22, values: {"name":"Armour","talidor":"Light – Steel/Buckler – steel (-15% and -4 damage)"}})
+				
+				data.push({id: 24, values: {"name":"Spells","talidor":"Laha (1d6 fire)"}})
+				
+				data.push({id: 21, values: {"name":"Inventory","talidor":"Nova’s Katana (1d10 + 3 slash (+1 if two hands are used), 30 Nova’s Kunai (1d4 + 3 pierce. Switch to 1d6 if thrown. Effective range of 15m)"}})
+				data.push({id: 22, values: {"name":"Stocks","talidor":"Laberto Industries: 3, "}})
+			
+			
+				editableGrid = new EditableGrid("DemoGridJsData");
+				editableGrid.load({"metadata": metadata, "data": data});
+				editableGrid.renderGrid("nova4", "testgrid");
+			} 
+		</script>
+		
+	</head>
+	
+	<body>
+		<h1>EditableGrid - Minimal Demo - Creating grid in Javascript - <a href="index.html">Back to menu</a></h1> 
+		<div id="nova4"></div>
+	</body>
+
+</html>

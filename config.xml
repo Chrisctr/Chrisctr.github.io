@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<widget xmlns = "http://www.w3.org/ns/widgets"
+		xmlns:gap = "http://phonegap.com/ns/1.0"
+		xmlns:android = "http://schemas.android.com/apk/res/android"
+		id        = "com.phonegap.mesa" 
+		version     = "1.0.0"
+		>
+		<feature name="http://api.phonegap.com/1.0/network"/>
+		<feature name="http://api.phonegap.com/1.0/file"/>
+		<preference name="AndroidPersistentFileLocation" value="Internal" />
+	<preference name="AndroidExtraFilesystems" value="files,cache, sdcard, cache-external, files-external" />
+	<preference name="BackupWebStorage" value="none" />
+		<platform name="ios">
+		<icon src="file://G:\Alysia Game\DnD Scenario\www\icon3.png" width="144" height="144" />
+		<icon src="file://G:\Alysia Game\DnD Scenario\www\icon def.png" width="72" height="72" />
+		<icon src="file://G:\Alysia Game\DnD Scenario\www\icon.png" width="60" height="60" />
+		<icon src="file://G:\Alysia Game\DnD Scenario\www\icon a.png" width="120" height="120" />
+		<icon src="file://G:\Alysia Game\DnD Scenario\www\icon b.png" width="180" height="180" />
+		</platform>
+		<platform name="android">
+		<icon src="file://G:\Alysia Game\DnD Scenario\www\icon small.png" qualifier="ldpi" />
+		<icon src="file://G:\Alysia Game\DnD Scenario\www\icon2.png" qualifier="mdpi" />
+		<icon src="file://G:\Alysia Game\DnD Scenario\www\icon def.png" qualifier="hdpi" />
+		<icon src="file://G:\Alysia Game\DnD Scenario\www\icon2 2.png" qualifier="xhdpi" />
+		<icon src="file://G:\Alysia Game\DnD Scenario\www\icon3.png" qualifier="xxhdpi" />
+		<icon src="file://G:\Alysia Game\DnD Scenario\www\icon2 2 2.png" qualifier="xxxhdpi" />
+		</platform>
+		<platform name="winphone">
+		</platform>
+		 <icon src="icon.png" />
+		 <access origin="*" />
+		</widget>		

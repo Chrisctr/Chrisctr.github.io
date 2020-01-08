@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		
+		<title>EditableGrid - Minimal demo - Creating grid in Javascript</title>
+		
+		<script src="../../editablegrid.js"></script>
+		<!-- [DO NOT DEPLOY] --> <script src="../../editablegrid_renderers.js" ></script>
+		<!-- [DO NOT DEPLOY] --> <script src="../../editablegrid_editors.js" ></script>
+		<!-- [DO NOT DEPLOY] --> <script src="../../editablegrid_validators.js" ></script>
+		<!-- [DO NOT DEPLOY] --> <script src="../../editablegrid_utils.js" ></script>
+		<!-- [DO NOT DEPLOY] --> <script src="../../editablegrid_charts.js" ></script>
+		<link rel="stylesheet" href="../../editablegrid.css" type="text/css" media="screen">
+		
+		<style>
+			body { font-family:'Mesa Pixel', tahoma, verdana, arial, sans-serif; font-size:11px; }
+			h1 { font-size: 15px; }
+			a { color: #548dc4; text-decoration: none; }
+			a:hover { text-decoration: underline; }
+			table.testgrid { border-collapse: collapse; border: 1px solid #CCB; width: 800px; }
+			table.testgrid td, table.testgrid th { padding: 5px; border: 1px solid #E0E0E0; }
+			table.testgrid th { background: #E5E5E5; text-align: left; }
+			input.invalid { background: red; color: #FDFDFD; }
+		</style>
+		
+		<script>
+			window.onload = function() {
+
+				// this approach is interesting if you need to dynamically create data in Javascript 
+				var metadata = [];
+				metadata.push({ name: "name", label: "NAME", datatype: "string", editable: true});
+				metadata.push({ name: "talidor", label:"Talidor", datatype: "string", editable: true});
+
+				// a small example of how you can manipulate the object in javascript
+
+
+				var data = [];
+				data.push({id: 1, values: {"name":"Level","talidor":"1"}})
+				data.push({id: 2, values: {"name":"Experience","talidor":"0"}})
+			
+				data.push({id: 3, values: {"name":"Class","talidor":"Gunman"}})
+				data.push({id: 4, values: {"name":"Subclass","talidor":"Mercenary, Hitman, Gunsmith"}})
+			
+				data.push({id: 5, values: {"name":"Size","talidor":"Medium"}})
+				data.push({id: 6, values: {"name":"Type","talidor":"Human"}})
+			
+				data.push({id: 7, values: {"name":"Age","talidor":"123 (Physically 42)"}})
+				data.push({id: 8, values: {"name":"Affinity","talidor":"Dark"}})
+			
+				data.push({id: 9, values: {"name":"Alignment","talidor":"True Neutral"}})
+				data.push({id: 10, values: {"name":"Saves","talidor":"Dexterity, Constitution"}})
+			
+				data.push({id: 11, values: {"name":"Hit Points","talidor":"11"}})
+				data.push({id: 12, values: {"name":"Hit Dice","talidor":"1d10 + 3"}})
+			
+				data.push({id: 13, values: {"name":"Weight Capacity","talidor":"90lb"}})
+				data.push({id: 14, values: {"name":"Status Effects","talidor":""}})
+			
+				data.push({id: 15, values: {"name":"Currency (Mensi)","talidor":"100"}})
+				data.push({id: 16, values: {"name":"Speed","talidor":"10m"}})
+			
+				data.push({id: 17, values: {"name":"Strength","talidor":"9 (-1)"}})
+				data.push({id: 18, values: {"name":"Dexterity","talidor":"20 (+5)"}})
+			
+				data.push({id: 19, values: {"name":"Constitution","talidor":"16 (+3)"}})
+				data.push({id: 20, values: {"name":"Intelligence","talidor":"10 (0)"}})
+			
+				data.push({id: 21, values: {"name":"Wisdom","talidor":"16 (+3)"}})
+				data.push({id: 22, values: {"name":"Charisma","talidor":"13 (+1)"}})
+			
+				data.push({id: 15, values: {"name":"Accuracy Level","talidor":"17"}})
+				data.push({id: 16, values: {"name":"Evasion Level","talidor":"4"}})
+			
+				data.push({id: 17, values: {"name":"Weapon Proficiencies","talidor":"Simple melee, Martial Ranged"}})
+				data.push({id: 18, values: {"name":"Equipped","talidor":"Talidor’s Pistol 1d8 + 3 (6 shots, 3lb)"}})
+			
+				data.push({id: 19, values: {"name":"Off-Hand","talidor":""}})
+				data.push({id: 20, values: {"name":"Holstered","talidor":""}})
+			
+				data.push({id: 21, values: {"name":"Armour Proficiencies","talidor":"Light or Less"}})
+				data.push({id: 22, values: {"name":"Charisma","talidor":"Light – Steel (-10% and -2 damage)"}})
+			
+				data.push({id: 21, values: {"name":"Inventory","talidor":"Talidor’s Pistol 1d8 + 3 (6 shots, +2 Accuracy Level, 3lb, ER 20m, LER 60m, MR 120m, 70 mensi), Normal bullets (x60, 6lb), "}})
+				data.push({id: 22, values: {"name":"Stocks","talidor":"Huntsmen’s Dogs: 120, "}})
+			
+			
+				editableGrid = new EditableGrid("DemoGridJsData");
+				editableGrid.load({"metadata": metadata, "data": data});
+				editableGrid.renderGrid("tablecontent", "testgrid");
+			} 
+		</script>
+		
+	</head>
+	
+	<body>
+		<h1>EditableGrid - Minimal Demo - Creating grid in Javascript - <a href="../index.html">Back to menu</a></h1> 
+		<div id="tablecontent"></div>
+	</body>
+
+</html>

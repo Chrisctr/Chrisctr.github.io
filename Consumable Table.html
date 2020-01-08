@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no;">
+
+  <link rel="stylesheet" href="themes/anatoli.css" />
+  <link rel="stylesheet" href="themes/anatoli.min.css" />
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.js"></script> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+	<script type="text/javascript" src="js/jqm-spinbox.js"></script>
+	
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script> 
+
+
+<script type="text/javascript" src="http://dev.jtsage.com/cdn/spinbox/latest/jqm-spinbox.min.js"></script>
+
+<script type="text/javascript" src="http://dev.jtsage.com/gpretty/prettify.js"></script>
+	<link type="text/css" href="http://dev.jtsage.com/gpretty/prettify.css" rel="stylesheet" />
+	
+	<link href="fonts/specimen_files/specimen_stylesheet.css" rel="stylesheet" type="text/css"/>
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="skroll.js"></script>
+		<script src="mesa-pixel.font.js"></script>
+<style>
+body {font-family: Mesa Pixel;}
+table, th, td {
+    border: 5px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table#t01 {
+    width: 100%;    
+    background-color: #ff00fa;
+}
+</style>
+<style> 
+body {
+    background-image: url("roryoff.gif"), url("roryoff.gif");
+    background-color: #cccccc;
+}
+</style>
+</head>
+
+<body>
+	<div data-role="page" id="obj" data-theme="d">
+	
+	
+	
+<a href="#Rations" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop" body style="font-family:'Mesa Pixel'">Rations</a>
+<div data-role="popup" id="Rations">
+<p>Rations</p>
+<p>(All weigh 2lb)</p>
+<table style="width:100%">
+  <tr>
+    <th>Item</th>
+    <th>Effect</th>
+    <th>Cost</th>
+  </tr>
+  <tr>
+    <td>Regoterran Dried Fruit and Meat Rations</td>
+	<td>1 day worth of food</td>
+    <td>100 mensi</td>
+  </tr>
+    <tr>
+    <td>Relicus Vitamin Pro Rations </td>
+	<td>2 days' worth of food</td>
+    <td>200 mensi</td>
+  </tr>
+    <tr>
+    <td>Cael Theocracy Vegetable Rations</td>
+	<td>1 day worth of food. Increases accuracy level by 1</td>
+    <td>200 mensi</td>
+  </tr>
+    <tr>
+    <td>Hydratopolan Chemical Rations </td>
+	<td>1 day worth of food. Increases strength stat by 1</td>
+    <td>500 mensi</td>
+  </tr>
+    <tr>
+    <td>Gyrico Meat Jelly Rations</td>
+	<td>1 day worth of food. Can use to lure animals from afar</td>
+    <td>200 mensi</td>
+  </tr>
+    <tr>
+    <td>Elven Flux Biscuit Rations </td>
+	<td>Weightless. 3 days’ worth of food. </td>
+    <td>2500 mensi</td>
+	    <tr>
+    <td>Dwarven Bread Rations</td>
+	<td>3 day worth of food</td>
+    <td>500 mensi</td>
+  </tr>
+    <tr>
+    <td>Drisalisk Fish Rations</td>
+	<td>1 day worth of food. Can be used as dragon feed</td>
+    <td>200 mensi</td>
+  </tr>
+    <tr>
+    <td>Corran Worm Rations</td>
+	<td>4 days’ worth of food. Disgusting for non-Corrans, inflicting nausea</td>
+    <td>50 mensi</td>
+  </tr>
+</table>
+</div>
+
+<a href="#Food" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop" body style="font-family:'Mesa Pixel'">Food</a>
+<div data-role="popup" id="Food">
+<p>Food</p>
+<p>(All weigh 0.5lb)</p>
+<table style="width:100%">
+  <tr>
+    <th>Item</th>
+    <th>Effect</th>
+    <th>Cost</th>
+  </tr>
+  <tr>
+    <td>Fruit or Vegetables</td>
+	<td>1/3 days’ worth of food. Heals 10% hp</td>
+    <td>100 mensi. Free in Anojun. 500 mensi in Gyrico and Hydratopola</td>
+  </tr>
+    <tr>
+    <td>Meat</td>
+	<td>1/3 days’ worth of food. Nullify one inflicted status effect on the day it’s eaten</td>
+    <td>100 mensi. Free in the Obsidian Peninsula. Cannot buy in Childerdale</td>
+  </tr>
+    <tr>
+    <td>Grain-based</td>
+	<td>1/3 days’ worth of food</td>
+    <td>100 mensi for 2. Cannot buy in Hydratopola, Anojun, or the Obsidian Peninsula</td>
+  </tr>
+    <tr>
+    <td>Refined foods</td>
+	<td>2/3 days’ worth of food. Can be addictive</td>
+    <td>200 mensi. 100 mensi in Hydratopola</td>
+  </tr>
+</table>
+</div>	
+
+<a href="#Medicine" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop" body style="font-family:'Mesa Pixel'">Medicine</a>
+<div data-role="popup" id="Medicine">
+<p>Medicine</p>
+<p>(All weigh 2lb)</p>
+<table style="width:100%">
+  <tr>
+    <th>Item</th>
+    <th>Effect</th>
+    <th>Cost</th>
+  </tr>
+  <tr>
+    <td>First Aid Kit</td>
+	<td>Heals 10% hp. Removes bleed. Takes two turns to use. Three uses</td>
+    <td>800 mensi</td>
+  </tr>
+    <tr>
+    <td>Tourniquet</td>
+	<td>Nullifies the diminishing health of the dismember status effect. Inflicts coma</td>
+    <td>500 mensi</td>
+  </tr>
+    <tr>
+    <td>Defibrillator</td>
+	<td>Cures the dying status effect and restores 1hp. Must roll a 6 with a 1d6 to succeed. Costs one action per attempt to use. Once per day. Needs Defibrillator Batteries for additional usage</td>
+    <td>5000 mensi</td>
+  </tr>
+    <tr>
+    <td>Defibrillator Batteries</td>
+	<td>Allows for one use of the defibrillator</td>
+    <td>2000 mensi</td>
+  </tr>
+</table>
+</div>	
+
+
+<a href="#Potions" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop" body style="font-family:'Mesa Pixel'">Potions</a>
+<div data-role="popup" id="Potions">
+<p>Potions</p>
+<p>(All weigh 0.5lb)</p>
+<table style="width:100%">
+  <tr>
+    <th>Item</th>
+    <th>Effect</th>
+    <th>Cost</th>
+  </tr>
+  <tr>
+    <td>Basic Potion</td>
+	<td>Heals 25% hp. Instant. Takes action turn to use</td>
+    <td>2000 mensi</td>
+  </tr>
+    <tr>
+    <td>Complex Potion</td>
+	<td>Heals 50% hp. Instant. Takes action turn to use</td>
+    <td>5000 mensi</td>
+  </tr>
+    <tr>
+    <td>Poison Potion</td>
+	<td>Removes poison. Takes action turn to use</td>
+    <td>300 mensi</td>
+  </tr>
+    <tr>
+    <td>Stun Potion</td>
+	<td>Removes stun. Takes action turn to use</td>
+    <td>300 mensi</td>
+  </tr>
+    <tr>
+    <td>Anti-magic potion</td>
+	<td>Removes natural magic effect. Takes action turn to use</td>
+    <td>1000 mensi</td>
+  </tr>
+</table>
+</div>	
+
+
+<a href="#Salves" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop" body style="font-family:'Mesa Pixel'">Salves</a>
+<div data-role="popup" id="Salves">
+<p>Salves</p>
+<p>(All weigh 1lb)</p>
+<p>(Can only use once every three turns)</p>
+<table style="width:100%">
+  <tr>
+    <th>Item</th>
+    <th>Effect</th>
+    <th>Cost</th>
+  </tr>
+  <tr>
+    <td>Healing Salve</td>
+	<td>Heals 50% hp. Over 3 turns</td>
+    <td>2000 mensi</td>
+  </tr>
+    <tr>
+    <td>Potent Salve</td>
+	<td>Heals 75% hp. Instant. Takes action turn to use</td>
+    <td>5000 mensi</td>
+  </tr>
+    <tr>
+    <td>Curing Salve</td>
+	<td>Removes poison, stun and bleed. Inhibits any disease for a day</td>
+    <td>2500 mensi</td>
+  </tr>
+    <tr>
+    <td>Anti-Magic Salve</td>
+	<td>Nullifies magical effects. Grants immunity for 3 turns</td>
+    <td>4000 mensi</td>
+  </tr>
+    <tr>
+    <td>Bark Salve</td>
+	<td>Increases armour level by 1. Heal 5% hp per turn. Doubles damage when using leaf attacks. Lasts 3 turns</td>
+    <td>4500 mensi</td>
+  </tr>
+      <tr>
+    <td>Ice Salves</td>
+	<td>Increases armour level by 2. Inflicts brittle status on user. Decrease damage from slash and pierce attacks by 25% (cannot reduce damage to 0). Doubles damage when using ice attacks. Lasts 3 turns</td>
+    <td>4500 mensi</td>
+  </tr>
+      <tr>
+    <td>Rock Salve </td>
+	<td>Increases armour level by 2. Doubles damage when using earth attacks. Lasts 3 turns</td>
+    <td>4500 mensi</td>
+  </tr>
+      <tr>
+    <td>Fire Salve</td>
+	<td>Increases all damage by 50%. Doubles damage when using fire attacks. Lasts 3 turns</td>
+    <td>4500 mensi</td>
+  </tr>
+      <tr>
+    <td>Water Salve</td>
+	<td>Increases evasion level by 3. Doubles damage when using water attacks. Not attacking makes you unable to be hit. Lasts 3 turns</td>
+    <td>4500 mensi</td>
+  </tr>
+      <tr>
+    <td>Air Salve</td>
+	<td>Increases evasion level by 3. Doubles movement speed. Doubles damage when using air attacks. Lasts 3 turns</td>
+    <td>4500 mensi</td>
+  </tr>
+      <tr>
+    <td>Lightning Salve</td>
+	<td>Triples movement speed. Doubles damage when using air attacks. Lasts 3 turns</td>
+    <td>4500 mensi</td>
+  </tr>
+      <tr>
+    <td>Flux Salve</td>
+	<td>Increases accuracy level by 6. Lasts 3 turns</td>
+    <td>4500 mensi</td>
+  </tr>
+</table>
+</div>	
+
+
+<a href="#Drugs" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop" body style="font-family:'Mesa Pixel'">Drugs</a>
+<div data-role="popup" id="Drugs">
+<p>Drugs</p>
+<p>(All weigh 0.5lb)</p>
+<table style="width:100%">
+  <tr>
+    <th>Item</th>
+    <th>Effect</th>
+    <th>Cost</th>
+  </tr>
+  <tr>
+    <td>Funky Grass</td>
+	<td>Gets you high, inflicting euphoria. Decreases all stats by 3</td>
+    <td>800 mensi</td>
+  </tr>
+    <tr>
+    <td>Painkillers</td>
+	<td>Decreases oncoming damage by 25% (cannot reduce damage to 0). Each level of armour reduces constitution by 2. Grants immunity to stun. Lasts until the end of the battle</td>
+    <td>1000 mensi</td>
+  </tr>
+    <tr>
+    <td>Antibiotics</td>
+	<td>Consume one per day for three days to cure disease</td>
+    <td>500 mensi</td>
+  </tr>
+    <tr>
+    <td>Anti-Venom</td>
+	<td>Cures venom. Grants immunity to venom for a battle</td>
+    <td>1000 mensi</td>
+  </tr>
+    <tr>
+    <td>Energy Drink</td>
+	<td>Removes natural magic effect. Takes action turn to use</td>
+    <td>20 mensi</td>
+  </tr>
+    <tr>
+    <th>Relicus Combat Stimulant</th>
+    <th>Decreases oncoming damage by 50% (cannot reduce damage to 0). Each level of armour reduces constitution by 2. Grants immunity to stun and sleep. Can become addictive. Lasts until the end of the battle</th>
+    <th>5000 mensi</th>
+  </tr>
+    <tr>
+    <th>Hydratopolan Combat Stimulant</th>
+    <th>Decreases oncoming damage by 50% (cannot reduce damage to 0). Increases all stats by 3. Each grade of armour reduces constitution by 4 (anything above light armour nullifies the 3 bonus to constitution). Grants immunity to stun, sleep and unconscious. Can become addictive. Lasts until the end of the battle</th>
+    <th>15000 mensi</th>
+  </tr>
+    <tr>
+    <th>Alyseid Medical Nanobots</th>
+    <th>Fully heals target every 3 turns. Cures any negative status effects, including dying. Removes any disease permanently. Decreases oncoming damage dealt by 75% for 3 turns</th>
+    <th>Only one available: 150000 mensi</th>
+  </tr>
+</table>
+</div>	
+
+
+<a href="#Grenades" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop" body style="font-family:'Mesa Pixel'">Grenades</a>
+<div data-role="popup" id="Grenades">
+<p>Grenades</p>
+<p>(All weigh 0.5lb)</p>
+<table style="width:100%">
+  <tr>
+    <th>Item</th>
+    <th>Effect</th>
+    <th>Cost</th>
+  </tr>
+   <tr>
+    <th>Fragment Grenade</th>
+    <th>1d20 strike damage to everyone within 10m of explosion. Inflicts shellshock</th>
+    <th>5000 mensi for 5</th>
+  </tr>
+   <tr>
+    <th>Sticky Grenade</th>
+    <th>1d20 strike damage to everyone within 5m of explosion. Deals double damage to any target it sticks to. Inflicts shellshock</th>
+    <th>6000 mensi for 5</th>
+  </tr>
+   <tr>
+    <th>Homing Grenade</th>
+    <th>1d12 strike damage to everyone within 5m of explosion. Deals double damage to however it hits. Always hits target. Inflicts shellshock</th>
+    <th>10000 mensi for 5</th>
+  </tr>
+   <tr>
+    <th>Cluster Grenade</th>
+    <th>3d12 strike damage to everyone within 15m of explosion. Inflicts shellshock</th>
+    <th>12000 mensi for 5</th>
+  </tr>
+   <tr>
+    <th>Homing Cluster Grenade</th>
+    <th>3d10 strike damage to everyone within 12.5m of explosion. Deals double damage to however it hits. Always hits target. Inflicts shellshock</th>
+    <th>16000 mensi for 5</th>
+  </tr>
+   <tr>
+    <th>Concussion Grenade</th>
+    <th>1d6 strike damage to everyone within 10m of explosion. Inflicts shellshock, stun and knockdown. Throws everyone effected 5m from the blast</th>
+    <th>3000 mensi for 5</th>
+  </tr>
+   <tr>
+    <th>Flash Grenade</th>
+    <th>1d6 strike damage to everyone within 10m of explosion. Inflicts shellshock, blind and deaf</th>
+    <th>3000 mensi for 5</th>
+  </tr>
+   <tr>
+    <th>Smog Grenade</th>
+    <th>1d6 strike damage to everyone within 25m of explosion. Inflicts shellshock and poison</th>
+    <th>12000 mensi for 5</th>
+  </tr>
+   <tr>
+    <th>Gamma Grenade</th>
+    <th>1d6 strike damage to everyone within 25m of explosion. Inflicts shellshock and radioactive</th>
+    <th>25000 mensi for 5</th>
+  </tr>
+   <tr>
+    <th>Napalm Grenade</th>
+    <th>1d12 fire damage to everyone within 10m of explosion. Inflicts shellshock</th>
+    <th>6000 mensi for 5</th>
+  </tr>
+     <tr>
+    <th>Cryo Grenade</th>
+    <th>1d12 ice damage to everyone within 10m of explosion. Inflicts shellshock</th>
+    <th>6000 mensi for 5</th>
+  </tr>
+     <tr>
+    <th>Aqua Grenade</th>
+    <th>1d10 water damage to everyone within 10m of explosion. Can use underwater. Inflicts shellshock</th>
+    <th>6000 mensi for 5</th>
+  </tr>
+     <tr>
+    <th>Gust Grenade</th>
+    <th>1d10 air damage to everyone within 10m of explosion. Blasts everyone effected back 20m. Inflicts shellshock</th>
+    <th>6000 mensi for 5</th>
+  </tr>
+     <tr>
+    <th>Zap Grenade</th>
+    <th>1d12 air damage to everyone within 10m of explosion. Inflicts shellshock</th>
+    <th>6000 mensi for 5</th>
+  </tr>
+     <tr>
+    <th>Petal Grenade</th>
+    <th>1d12 leaf damage to everyone within 10m of explosion. Inflicts shellshock</th>
+    <th>6000 mensi for 5</th>
+  </tr>
+     <tr>
+    <th>Sand Grenade</th>
+    <th>1d10 earth damage to everyone within 10m of explosion. Inflicts shellshock, blind and fog</th>
+    <th>6000 mensi for 5</th>
+  </tr>
+     <tr>
+    <th>Regoterran Armour Breaker Grenade</th>
+    <th>1d20 bash damage to everyone within 5m of explosion. Unaffected by armour. Inflicts shellshock and brittle</th>
+    <th>20000 mensi for 5</th>
+  </tr>
+    </tr>
+     <tr>
+    <th>Gyrico Atena Spike Grenade</th>
+    <th>1d20 pierce damage to everyone within 8m of explosion. Deals double damage to any target it sticks to. Inflicts shellshock and venom</th>
+    <th>35000 mensi for 5</th>
+  </tr>
+     <tr>
+    <th>Gyrico Lyru Pulse Grenade</th>
+    <th>1d12 strike damage to everyone within 50m of explosion excluding allies. Inflicts shellshock, knockdown and stun</th>
+    <th>50000 mensi for 5</th>
+  </tr>
+    </tr>
+     <tr>
+    <th>Cael Theocracy Holy Grenade</th>
+    <th>1d20 light damage to everyone 100m of explosion ahead of where you three it from</th>
+    <th>50000 mensi for 5</th>
+  </tr>
+     <tr>
+    <th>Relicus Coil Grenade</th>
+    <th>1d12 air damage to everyone within 30m of explosion. Completely immobilises all targets for one turn</th>
+    <th>60000 mensi for 5</th>
+  </tr>
+    </tr>
+     <tr>
+    <th>Hydratopolan Hallucinogen Grenade</th>
+    <th>1d12 strike damage to everyone within 20m of explosion. Inflicts shellshock, terror and despair</th>
+    <th>60000 mensi for 5</th>
+  </tr>
+     <tr>
+    <th>Dwarven Sunset Grenades</th>
+    <th>1d20 fire damage to everyone within 5m of explosion. Deals the same damage for three turns. Inflicts shellshock, stun, brittle, weaken and fog</th>
+    <th>80000 mensi for 5</th>
+  </tr>
+</table>
+</div>	
+
+
+<a href="#Tools" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop" body style="font-family:'Mesa Pixel'">Tools</a>
+<div data-role="popup" id="Tools">
+<p>Potions</p>
+<p>(All weigh 0.5lb)</p>
+<table style="width:100%">
+  <tr>
+    <th>Item</th>
+    <th>Effect</th>
+    <th>Cost</th>
+  </tr>
+  <tr>
+    <td>Magiciac Acid Spray </td>
+	<td>Dissolves metals. One use</td>
+    <td>3000 mensi</td>
+  </tr>
+    <tr>
+    <td>Plasma Torch</td>
+	<td>Cuts through anything short of Raferrium. Can cut up to 10m along a surface before being expended. Can be used as a weapon, expending 3.3m for each attack, dealing 1d20 pierce/fire</td>
+    <td>12000 mensi</td>
+  </tr>
+    <tr>
+    <td>Hypodermic Needle</td>
+	<td>Doubles the effectiveness of potions and drugs. One use</td>
+    <td>1750 mensi</td>
+  </tr>
+
+</table>
+</div>	
+
+
+</body>
+</html>
